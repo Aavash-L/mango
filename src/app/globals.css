@@ -1,23 +1,22 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: #09090b;
-  --color-foreground: #fafafa;
-  --color-mango: #f59e0b;
-  --color-mango-light: #fbbf24;
-  --color-mango-dark: #d97706;
-  --color-mango-glow: rgba(245, 158, 11, 0.4);
-  --color-surface: #18181b;
-  --color-surface-light: #27272a;
-  --color-border: #3f3f46;
-  --color-muted: #a1a1aa;
+  --color-background: #FEFCF9;
+  --color-foreground: #1C1917;
+  --color-mango: #E8920A;
+  --color-mango-light: #F5A623;
+  --color-mango-dark: #C47A08;
+  --color-surface: #F5F0EB;
+  --color-surface-light: #EDE7E0;
+  --color-border: #D6CFC7;
+  --color-muted: #78716C;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: #3f3f46 transparent;
+  scrollbar-color: #D6CFC7 transparent;
 }
 
 html {
@@ -31,8 +30,8 @@ body {
 }
 
 ::selection {
-  background: rgba(245, 158, 11, 0.3);
-  color: #fafafa;
+  background: rgba(232, 146, 10, 0.2);
+  color: #1C1917;
 }
 
 @keyframes shimmer {
@@ -40,40 +39,19 @@ body {
   100% { background-position: 200% 0; }
 }
 
-@keyframes pulse-glow {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 0.8; }
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-}
-
 .animate-shimmer {
   animation: shimmer 3s ease-in-out infinite;
   background-size: 200% 100%;
 }
 
-.animate-pulse-glow {
-  animation: pulse-glow 3s ease-in-out infinite;
-}
-
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-
 .gradient-text {
-  background: linear-gradient(135deg, #f59e0b, #fbbf24, #f59e0b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-mango);
 }
 
 .glow-box {
-  box-shadow: 0 0 30px rgba(245, 158, 11, 0.1), 0 0 60px rgba(245, 158, 11, 0.05);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.04);
 }
 
 .glow-border {
-  border: 1px solid rgba(245, 158, 11, 0.2);
+  border: 1px solid var(--color-border);
 }

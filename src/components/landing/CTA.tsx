@@ -12,38 +12,15 @@ export default function CTA() {
         <AnimatedSection>
           <div className="relative rounded-3xl overflow-hidden">
             {/* Background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-mango/20 via-mango/10 to-background" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(245,158,11,0.2),transparent_60%)]" />
+            <div className="absolute inset-0 bg-surface" />
             <div
-              className="absolute inset-0 opacity-[0.03]"
+              className="absolute inset-0 opacity-[0.5]"
               style={{
                 backgroundImage:
-                  "linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px)",
+                  "linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px)",
                 backgroundSize: "40px 40px",
               }}
             />
-
-            {/* Floating particles */}
-            {[...Array(5)].map((_, i) => (
-              <motion.div
-                key={i}
-                className="absolute w-1 h-1 rounded-full bg-mango/40"
-                animate={{
-                  y: [0, -30, 0],
-                  x: [0, 10, 0],
-                  opacity: [0.2, 0.6, 0.2],
-                }}
-                transition={{
-                  duration: 3 + i,
-                  repeat: Infinity,
-                  delay: i * 0.5,
-                }}
-                style={{
-                  left: `${20 + i * 15}%`,
-                  top: `${30 + (i % 3) * 20}%`,
-                }}
-              />
-            ))}
 
             <div className="relative z-10 text-center px-8 py-16 sm:px-16 sm:py-24">
               <motion.div
@@ -64,7 +41,7 @@ export default function CTA() {
                 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4"
               >
                 Your edge starts{" "}
-                <span className="gradient-text">here.</span>
+                <span className="text-mango">here.</span>
               </motion.h2>
 
               <motion.p

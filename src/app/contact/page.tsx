@@ -45,7 +45,6 @@ export default function ContactPage() {
       <Navbar />
       <main className="pt-24">
         <section className="py-16 sm:py-24 relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-mango/5 rounded-full blur-[120px]" />
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <motion.div
@@ -58,7 +57,7 @@ export default function ContactPage() {
                 Contact
               </span>
               <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
-                Get in <span className="gradient-text">Touch.</span>
+                Get in <span className="text-mango">Touch.</span>
               </h1>
               <p className="text-lg text-muted max-w-xl mx-auto">
                 Have a question, partnership idea, or just want to say hello?

@@ -41,7 +41,6 @@ export default function AboutPage() {
       <main className="pt-24">
         {/* Hero */}
         <section className="py-16 sm:py-24 relative overflow-hidden">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-mango/5 rounded-full blur-[120px]" />
 
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <motion.div
@@ -55,7 +54,7 @@ export default function AboutPage() {
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
                 Trading is better{" "}
-                <span className="gradient-text">together.</span>
+                <span className="text-mango">together.</span>
               </h1>
               <p className="text-lg text-muted leading-relaxed max-w-2xl mx-auto">
                 Mango was born from a simple frustration: most trading communities
@@ -143,8 +142,7 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <AnimatedSection>
               <div className="relative rounded-3xl overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-surface via-surface to-mango/10" />
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(245,158,11,0.15),transparent_60%)]" />
+                <div className="absolute inset-0 bg-surface" />
 
                 <div className="relative z-10 p-8 sm:p-12 lg:p-16">
                   <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">

@@ -11,17 +11,13 @@ export default function Hero() {
       <div className="absolute inset-0">
         {/* Grid pattern */}
         <div
-          className="absolute inset-0 opacity-[0.03]"
+          className="absolute inset-0 opacity-[0.4]"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(245,158,11,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(245,158,11,0.5) 1px, transparent 1px)",
+              "linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px)",
             backgroundSize: "60px 60px",
           }}
         />
-        {/* Gradient orbs */}
-        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-mango/10 rounded-full blur-[128px]" />
-        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-mango/5 rounded-full blur-[128px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-mango/[0.03] rounded-full blur-[100px]" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -49,7 +45,7 @@ export default function Hero() {
               Trade smarter
               <br />
               with a{" "}
-              <span className="gradient-text">real</span>
+              <span className="text-mango">real</span>
               <br />
               community.
             </motion.h1>
@@ -114,11 +110,8 @@ export default function Hero() {
             className="relative hidden lg:block"
           >
             <div className="relative">
-              {/* Glow behind card */}
-              <div className="absolute -inset-4 bg-gradient-to-br from-mango/20 via-mango/5 to-transparent rounded-3xl blur-2xl" />
-
               {/* Main dashboard card */}
-              <div className="relative bg-surface/80 backdrop-blur-sm rounded-2xl border border-border/50 p-6 glow-box">
+              <div className="relative bg-surface/80 backdrop-blur-sm rounded-2xl border border-border p-6 shadow-lg shadow-black/5">
                 {/* Top bar */}
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center gap-2">
@@ -139,8 +132,8 @@ export default function Hero() {
                   >
                     <defs>
                       <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stopColor="rgba(245,158,11,0.3)" />
-                        <stop offset="100%" stopColor="rgba(245,158,11,0)" />
+                        <stop offset="0%" stopColor="rgba(232,146,10,0.12)" />
+                        <stop offset="100%" stopColor="rgba(232,146,10,0)" />
                       </linearGradient>
                     </defs>
                     {/* Area fill */}
@@ -154,7 +147,7 @@ export default function Hero() {
                     {/* Line */}
                     <motion.path
                       d="M0 160 L30 140 L60 145 L90 120 L120 130 L150 90 L180 95 L210 60 L240 70 L270 40 L300 50 L330 25 L360 30 L400 10"
-                      stroke="#f59e0b"
+                      stroke="#E8920A"
                       strokeWidth="2.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -167,7 +160,7 @@ export default function Hero() {
                       cx="400"
                       cy="10"
                       r="4"
-                      fill="#f59e0b"
+                      fill="#E8920A"
                       initial={{ opacity: 0, scale: 0 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ delay: 2 }}
@@ -178,11 +171,11 @@ export default function Hero() {
                 {/* Stats row */}
                 <div className="grid grid-cols-3 gap-4">
                   {[
-                    { label: "Portfolio", value: "+24.8%", color: "text-green-400" },
+                    { label: "Portfolio", value: "+24.8%", color: "text-green-600" },
                     { label: "Win Rate", value: "73%", color: "text-mango" },
-                    { label: "Avg Return", value: "+4.2%", color: "text-green-400" },
+                    { label: "Avg Return", value: "+4.2%", color: "text-green-600" },
                   ].map((stat) => (
-                    <div key={stat.label} className="bg-background/50 rounded-xl p-3">
+                    <div key={stat.label} className="bg-white/60 rounded-xl p-3">
                       <p className="text-[10px] text-muted uppercase tracking-wider mb-1">
                         {stat.label}
                       </p>
@@ -197,10 +190,10 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.2, duration: 0.6 }}
-                className="absolute -bottom-6 -left-6 bg-surface border border-border/50 rounded-xl p-3 shadow-xl shadow-black/20 flex items-center gap-3"
+                className="absolute -bottom-6 -left-6 bg-surface border border-border rounded-xl p-3 shadow-lg shadow-black/8 flex items-center gap-3"
               >
                 <div className="w-10 h-10 rounded-lg bg-green-500/10 flex items-center justify-center">
-                  <TrendingUp size={18} className="text-green-400" />
+                  <TrendingUp size={18} className="text-green-600" />
                 </div>
                 <div>
                   <p className="text-xs font-medium">New Signal</p>

@@ -49,13 +49,12 @@ export default function Stats() {
         <AnimatedSection>
           <div className="relative rounded-3xl overflow-hidden">
             {/* Background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-surface via-surface to-mango/10" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(245,158,11,0.15),transparent_60%)]" />
+            <div className="absolute inset-0 bg-surface" />
             <div
-              className="absolute inset-0 opacity-[0.04]"
+              className="absolute inset-0 opacity-[0.5]"
               style={{
                 backgroundImage:
-                  "linear-gradient(rgba(245,158,11,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(245,158,11,0.5) 1px, transparent 1px)",
+                  "linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px)",
                 backgroundSize: "40px 40px",
               }}
             />
@@ -82,7 +81,7 @@ export default function Stats() {
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
                 {stats.map((stat, i) => (
                   <AnimatedSection key={stat.label} delay={i * 0.15} className="text-center">
-                    <p className="text-4xl sm:text-5xl font-bold gradient-text mb-2">
+                    <p className="text-4xl sm:text-5xl font-bold text-mango mb-2">
                       <AnimatedCounter value={stat.value} suffix={stat.suffix} />
                     </p>
                     <p className="text-sm text-muted">{stat.label}</p>

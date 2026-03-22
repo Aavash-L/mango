@@ -26,13 +26,6 @@ export default function MangoLogo({ size = 32, className = "" }: MangoLogoProps)
           <stop offset="0%" stopColor="rgba(255,255,255,0.3)" />
           <stop offset="100%" stopColor="rgba(255,255,255,0)" />
         </radialGradient>
-        <filter id="glow">
-          <feGaussianBlur stdDeviation="2" result="coloredBlur" />
-          <feMerge>
-            <feMergeNode in="coloredBlur" />
-            <feMergeNode in="SourceGraphic" />
-          </feMerge>
-        </filter>
       </defs>
       {/* Leaf */}
       <path
@@ -55,7 +48,6 @@ export default function MangoLogo({ size = 32, className = "" }: MangoLogoProps)
         rx="18"
         ry="22"
         fill="url(#mangoGrad)"
-        filter="url(#glow)"
         transform="rotate(-10 32 36)"
       />
       {/* Shine overlay */}

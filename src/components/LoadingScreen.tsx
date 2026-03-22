@@ -29,34 +29,6 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
           transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
           className="fixed inset-0 z-[100] bg-background flex flex-col items-center justify-center overflow-hidden"
         >
-          {/* Background glow */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.2, ease: "easeOut" }}
-            className="absolute w-[500px] h-[500px] rounded-full"
-            style={{
-              background:
-                "radial-gradient(circle, rgba(245,158,11,0.15) 0%, rgba(245,158,11,0.05) 40%, transparent 70%)",
-            }}
-          />
-
-          {/* Animated rings */}
-          {[1, 2, 3].map((i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, scale: 0.3 }}
-              animate={{ opacity: [0, 0.3, 0], scale: [0.3, 1.2 + i * 0.3, 1.5 + i * 0.3] }}
-              transition={{
-                duration: 2,
-                delay: 0.2 * i,
-                ease: "easeOut",
-              }}
-              className="absolute rounded-full border border-mango/20"
-              style={{ width: 120 + i * 60, height: 120 + i * 60 }}
-            />
-          ))}
-
           {/* Mango icon */}
           <motion.div
             initial={{ opacity: 0, scale: 0.3, rotate: -20 }}
@@ -80,21 +52,14 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
             >
               <defs>
                 <linearGradient id="loadMangoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#fbbf24" />
-                  <stop offset="50%" stopColor="#f59e0b" />
-                  <stop offset="100%" stopColor="#d97706" />
+                  <stop offset="0%" stopColor="#F5A623" />
+                  <stop offset="50%" stopColor="#E8920A" />
+                  <stop offset="100%" stopColor="#C47A08" />
                 </linearGradient>
                 <radialGradient id="loadMangoShine" cx="35%" cy="30%" r="50%">
                   <stop offset="0%" stopColor="rgba(255,255,255,0.35)" />
                   <stop offset="100%" stopColor="rgba(255,255,255,0)" />
                 </radialGradient>
-                <filter id="loadGlow">
-                  <feGaussianBlur stdDeviation="4" result="coloredBlur" />
-                  <feMerge>
-                    <feMergeNode in="coloredBlur" />
-                    <feMergeNode in="SourceGraphic" />
-                  </feMerge>
-                </filter>
               </defs>
               <path
                 d="M38 8C38 8 42 4 48 6C44 10 40 14 38 16C36 14 38 8 38 8Z"
@@ -114,7 +79,6 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
                 rx="18"
                 ry="22"
                 fill="url(#loadMangoGrad)"
-                filter="url(#loadGlow)"
                 transform="rotate(-10 32 36)"
               />
               <ellipse
@@ -126,19 +90,6 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
                 transform="rotate(-10 32 36)"
               />
             </svg>
-
-            {/* Glow behind icon */}
-            <motion.div
-              animate={{
-                opacity: [0.3, 0.7, 0.3],
-                scale: [0.9, 1.1, 0.9],
-              }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute inset-0 -z-10 blur-2xl"
-              style={{
-                background: "radial-gradient(circle, rgba(245,158,11,0.5) 0%, transparent 70%)",
-              }}
-            />
           </motion.div>
 
           {/* Brand text */}
@@ -149,7 +100,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
             className="mt-8 text-center"
           >
             <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
-              Man<span className="gradient-text">go</span>
+              Man<span className="text-mango">go</span>
             </h1>
             <motion.p
               initial={{ opacity: 0 }}

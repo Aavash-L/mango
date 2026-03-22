@@ -25,7 +25,7 @@ export default function Button({
 
   const variants = {
     primary:
-      "bg-mango text-background hover:bg-mango-light shadow-[0_0_20px_rgba(245,158,11,0.3)] hover:shadow-[0_0_30px_rgba(245,158,11,0.5)]",
+      "bg-mango text-white hover:bg-mango-light shadow-md hover:shadow-lg",
     secondary:
       "bg-surface border border-border text-foreground hover:border-mango/50 hover:bg-surface-light",
     ghost: "text-mango hover:text-mango-light hover:bg-mango/10",
