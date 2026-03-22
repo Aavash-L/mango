@@ -59,8 +59,8 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:block">
-            <Button href="#pricing" size="sm">
-              Join Mango
+            <Button href="#" size="sm">
+              Join for Free
             </Button>
           </div>
 
@@ -97,8 +97,8 @@ export default function Navbar() {
                 </Link>
               ))}
               <div className="pt-4">
-                <Button href="#pricing" size="lg" className="w-full">
-                  Join Mango
+                <Button href="#" size="lg" className="w-full">
+                  Join for Free
                 </Button>
               </div>
             </div>

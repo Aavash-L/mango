@@ -62,8 +62,8 @@ export default function CTA() {
                 transition={{ delay: 0.3 }}
                 className="flex flex-col sm:flex-row gap-4 justify-center"
               >
-                <Button href="#pricing" size="lg">
-                  Join Mango <ArrowRight size={18} className="ml-2" />
+                <Button href="#" size="lg">
+                  Join for Free <ArrowRight size={18} className="ml-2" />
                 </Button>
                 <Button href="/contact" variant="secondary" size="lg">
                   Talk to Us

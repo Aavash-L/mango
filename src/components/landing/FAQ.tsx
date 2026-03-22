@@ -28,9 +28,9 @@ const faqs = [
       "Mango is designed for all levels — from traders just getting started to experienced professionals. Our education library covers fundamentals through advanced strategies, and the community is supportive of all skill levels.",
   },
   {
-    question: "Can I cancel my membership anytime?",
+    question: "Is Mango really free?",
     answer:
-      "Absolutely. There are no long-term commitments or cancellation fees. You can cancel your subscription at any time and retain access through the end of your billing period.",
+      "Yes. Mango is 100% free to join. No hidden fees, no upsells, no catch — just a community of traders helping each other get better.",
   },
   {
     question: "How is Mango different from other trading groups?",

@@ -9,7 +9,6 @@ import WhyMango from "@/components/landing/WhyMango";
 import Features from "@/components/landing/Features";
 import Stats from "@/components/landing/Stats";
 import Testimonials from "@/components/landing/Testimonials";
-import Pricing from "@/components/landing/Pricing";
 import FAQ from "@/components/landing/FAQ";
 import CTA from "@/components/landing/CTA";
 import Disclaimer from "@/components/landing/Disclaimer";
@@ -41,7 +40,6 @@ export default function Home() {
             <Features />
             <Stats />
             <Testimonials />
-            <Pricing />
             <FAQ />
             <CTA />
             <Disclaimer />

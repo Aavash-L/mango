@@ -7,7 +7,6 @@ import { Twitter, MessageCircle, Mail, ArrowUpRight } from "lucide-react";
 const footerLinks = {
   Product: [
     { label: "Features", href: "#features" },
-    { label: "Pricing", href: "#pricing" },
     { label: "FAQ", href: "#faq" },
   ],
   Company: [

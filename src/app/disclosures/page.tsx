@@ -46,8 +46,8 @@ export default function DisclosuresPage() {
 
               <div className="prose-custom space-y-8">
                 <p className="text-sm text-muted leading-relaxed font-semibold uppercase tracking-wide">
-                  Please read this Risk Disclosure carefully before subscribing
-                  to the Service.
+                  Please read this Risk Disclosure carefully before using
+                  the Service.
                 </p>
 
                 <div>
@@ -340,7 +340,7 @@ export default function DisclosuresPage() {
                     Acknowledgment
                   </h3>
                   <p className="text-sm text-muted leading-relaxed">
-                    By subscribing to the Service, you acknowledge that you have
+                    By using the Service, you acknowledge that you have
                     read, understood, and agree to this Risk Disclosure. You
                     acknowledge that trading involves substantial risk and that
                     you may lose some or all of your invested capital.
@@ -385,7 +385,7 @@ export default function DisclosuresPage() {
                   (&quot;Company,&quot; &quot;we,&quot; &quot;us,&quot; or
                   &quot;our&quot;), including our Discord community, website, and
                   all related services (collectively, the
-                  &quot;Service&quot;). By subscribing to or using the Service,
+                  &quot;Service&quot;). By joining or using the Service,
                   you agree to be bound by these Terms.
                 </p>
 
@@ -394,8 +394,8 @@ export default function DisclosuresPage() {
                     1. Description of Service
                   </h3>
                   <p className="text-sm text-muted leading-relaxed mb-3">
-                    The Service is a subscription-based educational and
-                    informational service providing:
+                    The Service is a free educational and informational
+                    community providing:
                   </p>
                   <ul className="space-y-2 text-sm text-muted leading-relaxed list-disc list-inside">
                     <li>General market commentary</li>
@@ -504,89 +504,40 @@ export default function DisclosuresPage() {
 
                 <div>
                   <h3 className="text-lg font-semibold mb-3">
-                    5. Subscription, Billing, and Auto-Renewal
+                    5. Cost
                   </h3>
-
-                  <h4 className="text-sm font-semibold mb-2 mt-4">
-                    5.1 Subscription Terms
-                  </h4>
                   <p className="text-sm text-muted leading-relaxed">
-                    The Service is offered on a monthly subscription basis at
-                    $50.00 per month, or as a one-time lifetime access purchase
-                    at $999.00.
-                  </p>
-
-                  <h4 className="text-sm font-semibold mb-2 mt-4">
-                    5.2 Auto-Renewal
-                  </h4>
-                  <p className="text-sm text-muted leading-relaxed">
-                    Monthly subscriptions will automatically renew each month
-                    until canceled. You will be charged the then-current
-                    subscription fee on each monthly anniversary of your initial
-                    subscription date. You authorize us to charge your payment
-                    method on file for all recurring subscription fees.
-                  </p>
-
-                  <h4 className="text-sm font-semibold mb-2 mt-4">
-                    5.3 Billing
-                  </h4>
-                  <p className="text-sm text-muted leading-relaxed">
-                    All payments are processed through Stripe. You are
-                    responsible for providing accurate, current, and complete
-                    payment information. If payment cannot be processed, your
-                    access may be suspended or terminated.
-                  </p>
-
-                  <h4 className="text-sm font-semibold mb-2 mt-4">
-                    5.4 Cancellation
-                  </h4>
-                  <p className="text-sm text-muted leading-relaxed">
-                    You may cancel your subscription at any time through your
-                    account dashboard or by contacting us at
-                    MangoTradingGroupLLC@gmail.com. Cancellation will take effect
-                    at the end of your current billing period.
+                    The Service is currently offered free of charge. We reserve
+                    the right to introduce paid features or tiers in the future,
+                    at which point updated terms will be communicated in advance.
                   </p>
                 </div>
 
                 <div>
                   <h3 className="text-lg font-semibold mb-3">
-                    6. Refund Policy
-                  </h3>
-                  <p className="text-sm text-muted leading-relaxed">
-                    Due to the digital nature of this service, all sales are
-                    final once access is granted. No partial refunds for unused
-                    subscription time. No refunds due to dissatisfaction, market
-                    losses, trading outcomes, or inactivity. No refunds for
-                    failure to use the Service.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-semibold mb-3">
-                    7. Access and Account
+                    6. Access and Account
                   </h3>
 
                   <h4 className="text-sm font-semibold mb-2 mt-4">
-                    7.1 Discord Access
+                    6.1 Discord Access
                   </h4>
                   <p className="text-sm text-muted leading-relaxed">
-                    Upon successful payment, you will receive access to our
-                    private Discord community. You are responsible for
-                    maintaining the security of your Discord account.
+                    Access to the Service is provided through our Discord
+                    community. You are responsible for maintaining the security
+                    of your Discord account.
                   </p>
 
                   <h4 className="text-sm font-semibold mb-2 mt-4">
-                    7.2 Account Sharing
+                    6.2 Account Sharing
                   </h4>
                   <p className="text-sm text-muted leading-relaxed">
-                    Your subscription is personal and non-transferable. Sharing
-                    your account access or redistributing Service content is
-                    prohibited and may result in immediate termination without
-                    refund.
+                    Your access is personal and non-transferable. Redistributing
+                    Service content is prohibited and may result in immediate
+                    removal from the community.
                   </p>
 
                   <h4 className="text-sm font-semibold mb-2 mt-4">
-                    7.3 Jurisdictional Compliance
+                    6.3 Jurisdictional Compliance
                   </h4>
                   <p className="text-sm text-muted leading-relaxed">
                     You are solely responsible for ensuring that your access to
@@ -600,11 +551,11 @@ export default function DisclosuresPage() {
 
                 <div>
                   <h3 className="text-lg font-semibold mb-3">
-                    8. Access Revocation and Moderation
+                    7. Access Revocation and Moderation
                   </h3>
 
                   <h4 className="text-sm font-semibold mb-2 mt-4">
-                    8.1 Our Rights
+                    7.1 Our Rights
                   </h4>
                   <p className="text-sm text-muted leading-relaxed mb-3">
                     We reserve the right, at our sole discretion, to:
@@ -616,7 +567,7 @@ export default function DisclosuresPage() {
                     <li>Enforce community rules and guidelines</li>
                     <li>Moderate, edit, or delete any content</li>
                     <li>
-                      Terminate access without refund for violations of these
+                      Terminate access for violations of these
                       Terms
                     </li>
                     <li>
@@ -625,7 +576,7 @@ export default function DisclosuresPage() {
                   </ul>
 
                   <h4 className="text-sm font-semibold mb-2 mt-4">
-                    8.2 User Content
+                    7.2 User Content
                   </h4>
                   <p className="text-sm text-muted leading-relaxed">
                     We are not responsible for statements, opinions, or content
@@ -637,11 +588,11 @@ export default function DisclosuresPage() {
 
                 <div>
                   <h3 className="text-lg font-semibold mb-3">
-                    9. Platform Dependency Disclaimer
+                    8. Platform Dependency Disclaimer
                   </h3>
                   <p className="text-sm text-muted leading-relaxed mb-3">
-                    The Service relies on third-party platforms including Discord
-                    and Stripe. You acknowledge and agree that:
+                    The Service relies on third-party platforms including
+                    Discord. You acknowledge and agree that:
                   </p>
                   <ul className="space-y-2 text-sm text-muted leading-relaxed list-disc list-inside">
                     <li>
@@ -649,15 +600,8 @@ export default function DisclosuresPage() {
                       account actions are outside our control
                     </li>
                     <li>
-                      Stripe payment processing issues are outside our control
-                    </li>
-                    <li>
-                      Loss of access due to third-party platform actions is not
-                      refundable
-                    </li>
-                    <li>
                       We are not affiliated with, endorsed by, or partnered with
-                      Discord Inc. or Stripe Inc.
+                      Discord Inc.
                     </li>
                     <li>
                       Changes to third-party platform terms or availability may
@@ -668,11 +612,11 @@ export default function DisclosuresPage() {
 
                 <div>
                   <h3 className="text-lg font-semibold mb-3">
-                    10. Limitation of Liability
+                    9. Limitation of Liability
                   </h3>
 
                   <h4 className="text-sm font-semibold mb-2 mt-4">
-                    10.1 Liability Cap
+                    9.1 Liability Cap
                   </h4>
                   <p className="text-sm text-muted leading-relaxed uppercase">
                     To the maximum extent permitted by law, our total liability
@@ -682,7 +626,7 @@ export default function DisclosuresPage() {
                   </p>
 
                   <h4 className="text-sm font-semibold mb-2 mt-4">
-                    10.2 Exclusion of Damages
+                    9.2 Exclusion of Damages
                   </h4>
                   <p className="text-sm text-muted leading-relaxed mb-3 uppercase">
                     We shall not be liable for any:
@@ -710,7 +654,7 @@ export default function DisclosuresPage() {
                   </ul>
 
                   <h4 className="text-sm font-semibold mb-2 mt-4">
-                    10.3 Acknowledgment
+                    9.3 Acknowledgment
                   </h4>
                   <p className="text-sm text-muted leading-relaxed uppercase">
                     You acknowledge that the limitations in this section are
@@ -721,7 +665,7 @@ export default function DisclosuresPage() {
 
                 <div>
                   <h3 className="text-lg font-semibold mb-3">
-                    11. Disclaimer of Warranties
+                    10. Disclaimer of Warranties
                   </h3>
                   <p className="text-sm text-muted leading-relaxed mb-3 uppercase">
                     The Service is provided &quot;as is&quot; and &quot;as
@@ -743,11 +687,11 @@ export default function DisclosuresPage() {
 
                 <div>
                   <h3 className="text-lg font-semibold mb-3">
-                    12. Binding Arbitration and Class Action Waiver
+                    11. Binding Arbitration and Class Action Waiver
                   </h3>
 
                   <h4 className="text-sm font-semibold mb-2 mt-4">
-                    12.1 Agreement to Arbitrate
+                    11.1 Agreement to Arbitrate
                   </h4>
                   <p className="text-sm text-muted leading-relaxed uppercase">
                     You and the Company agree that any dispute, claim, or
@@ -759,7 +703,7 @@ export default function DisclosuresPage() {
                   </p>
 
                   <h4 className="text-sm font-semibold mb-2 mt-4">
-                    12.2 Class Action Waiver
+                    11.2 Class Action Waiver
                   </h4>
                   <p className="text-sm text-muted leading-relaxed uppercase">
                     You waive any right to participate in a class action lawsuit
@@ -770,7 +714,7 @@ export default function DisclosuresPage() {
                   </p>
 
                   <h4 className="text-sm font-semibold mb-2 mt-4">
-                    12.3 Arbitration Procedure
+                    11.3 Arbitration Procedure
                   </h4>
                   <p className="text-sm text-muted leading-relaxed">
                     Arbitration shall be conducted by the American Arbitration
@@ -781,7 +725,7 @@ export default function DisclosuresPage() {
                   </p>
 
                   <h4 className="text-sm font-semibold mb-2 mt-4">
-                    12.4 Small Claims Exception
+                    11.4 Small Claims Exception
                   </h4>
                   <p className="text-sm text-muted leading-relaxed">
                     Either party may bring an individual action in small claims
@@ -791,7 +735,7 @@ export default function DisclosuresPage() {
 
                 <div>
                   <h3 className="text-lg font-semibold mb-3">
-                    13. Governing Law and Venue
+                    12. Governing Law and Venue
                   </h3>
                   <p className="text-sm text-muted leading-relaxed">
                     These Terms shall be governed by and construed in accordance
@@ -804,7 +748,7 @@ export default function DisclosuresPage() {
 
                 <div>
                   <h3 className="text-lg font-semibold mb-3">
-                    14. Indemnification
+                    13. Indemnification
                   </h3>
                   <p className="text-sm text-muted leading-relaxed mb-3">
                     You agree to indemnify, defend, and hold harmless Mango
@@ -830,7 +774,7 @@ export default function DisclosuresPage() {
 
                 <div>
                   <h3 className="text-lg font-semibold mb-3">
-                    15. Modifications to Terms
+                    14. Modifications to Terms
                   </h3>
                   <p className="text-sm text-muted leading-relaxed">
                     We may modify these Terms at any time. Material changes will
@@ -842,7 +786,7 @@ export default function DisclosuresPage() {
 
                 <div>
                   <h3 className="text-lg font-semibold mb-3">
-                    16. Severability
+                    15. Severability
                   </h3>
                   <p className="text-sm text-muted leading-relaxed">
                     If any provision of these Terms is found to be
@@ -853,18 +797,18 @@ export default function DisclosuresPage() {
 
                 <div>
                   <h3 className="text-lg font-semibold mb-3">
-                    17. Entire Agreement
+                    16. Entire Agreement
                   </h3>
                   <p className="text-sm text-muted leading-relaxed">
-                    These Terms, together with the Risk Disclosure, Privacy
-                    Policy, and Refund Policy, constitute the entire agreement
-                    between you and us regarding the Service.
+                    These Terms, together with the Risk Disclosure and Privacy
+                    Policy, constitute the entire agreement between you and us
+                    regarding the Service.
                   </p>
                 </div>
 
                 <div className="bg-surface/50 border border-border/50 rounded-xl p-5">
                   <h4 className="text-sm font-semibold mb-1">
-                    18. Contact Information
+                    17. Contact Information
                   </h4>
                   <p className="text-sm text-muted">
                     For questions about these Terms, please contact us at:

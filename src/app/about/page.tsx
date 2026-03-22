@@ -74,7 +74,7 @@ export default function AboutPage() {
                   What is Mango?
                 </h2>
                 <p className="text-muted leading-relaxed mb-4">
-                  Mango is a premium trading community built for traders who take
+                  Mango is a free trading community built for traders who take
                   their craft seriously. We combine real-time trade insights,
                   structured education, and a curated community to create an
                   environment where traders actually improve.
@@ -160,8 +160,8 @@ export default function AboutPage() {
                     members build lasting success in the markets and beyond. This
                     is just the beginning.
                   </p>
-                  <Button href="#pricing" size="lg">
-                    Join the Movement <ArrowRight size={18} className="ml-2" />
+                  <Button href="#" size="lg">
+                    Join for Free <ArrowRight size={18} className="ml-2" />
                   </Button>
                 </div>
               </div>

@@ -32,7 +32,7 @@ export default function Hero() {
             >
               <span className="w-2 h-2 rounded-full bg-mango animate-pulse" />
               <span className="text-xs font-medium text-mango tracking-wide">
-                Now accepting new members
+                Free to join — open now
               </span>
             </motion.div>
 
@@ -67,8 +67,8 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Button href="#pricing" size="lg">
-                Get Started <ArrowRight size={18} className="ml-2" />
+              <Button href="#" size="lg">
+                Join for Free <ArrowRight size={18} className="ml-2" />
               </Button>
               <Button href="#why-mango" variant="secondary" size="lg">
                 Learn More
