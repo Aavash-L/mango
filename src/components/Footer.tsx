@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import MangoLogo from "./ui/MangoLogo";
-import { Twitter, MessageCircle, Mail, ArrowUpRight } from "lucide-react";
+import { Instagram, Music2, Mail, ArrowUpRight } from "lucide-react";
 
 const footerLinks = {
   Product: [
@@ -14,15 +14,15 @@ const footerLinks = {
     { label: "Contact", href: "/contact" },
   ],
   Community: [
-    { label: "Discord", href: "#", external: true },
-    { label: "Twitter", href: "#", external: true },
+    { label: "Instagram", href: "https://www.instagram.com/mangoestrading/", external: true },
+    { label: "TikTok", href: "https://www.tiktok.com/@mangotradingllc", external: true },
   ],
 };
 
 const socialLinks = [
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: MessageCircle, href: "#", label: "Discord" },
-  { icon: Mail, href: "#", label: "Email" },
+  { icon: Instagram, href: "https://www.instagram.com/mangoestrading/", label: "Instagram" },
+  { icon: Music2, href: "https://www.tiktok.com/@mangotradingllc", label: "TikTok" },
+  { icon: Mail, href: "mailto:mangotradinggroupllc@gmail.com", label: "Email" },
 ];
 
 export default function Footer() {

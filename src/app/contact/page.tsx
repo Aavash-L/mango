@@ -6,29 +6,29 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import Button from "@/components/ui/Button";
-import { Send, MessageCircle, Mail, Twitter } from "lucide-react";
+import { Send, Instagram, Mail, Music2 } from "lucide-react";
 
 const contactMethods = [
   {
-    icon: MessageCircle,
-    title: "Discord",
-    description: "Join our community server.",
-    link: "#",
-    linkText: "Join Discord",
+    icon: Instagram,
+    title: "Instagram",
+    description: "Follow us for daily content.",
+    link: "https://www.instagram.com/mangoestrading/",
+    linkText: "@mangoestrading",
   },
   {
-    icon: Twitter,
-    title: "Twitter",
-    description: "Follow us for updates.",
-    link: "#",
-    linkText: "@MangoTrading",
+    icon: Music2,
+    title: "TikTok",
+    description: "Watch our trading videos.",
+    link: "https://www.tiktok.com/@mangotradingllc",
+    linkText: "@mangotradingllc",
   },
   {
     icon: Mail,
     title: "Email",
     description: "For business inquiries.",
-    link: "mailto:hello@mango.trade",
-    linkText: "hello@mango.trade",
+    link: "mailto:mangotradinggroupllc@gmail.com",
+    linkText: "mangotradinggroupllc@gmail.com",
   },
 ];
 
