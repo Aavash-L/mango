@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import MangoLogo from "./ui/MangoLogo";
-import { Instagram, Music2, Mail, ArrowUpRight } from "lucide-react";
+import { Instagram, Music2, ArrowUpRight } from "lucide-react";
 
 const footerLinks = {
   Product: [
@@ -22,7 +22,6 @@ const footerLinks = {
 const socialLinks = [
   { icon: Instagram, href: "https://www.instagram.com/mangoestrading/", label: "Instagram" },
   { icon: Music2, href: "https://www.tiktok.com/@mangotradingllc", label: "TikTok" },
-  { icon: Mail, href: "mailto:mangotradinggroupllc@gmail.com", label: "Email" },
 ];
 
 export default function Footer() {
