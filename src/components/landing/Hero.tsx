@@ -172,7 +172,7 @@ export default function Hero() {
                 <div className="grid grid-cols-3 gap-4">
                   {[
                     { label: "Portfolio", value: "+24.8%", color: "text-green-600" },
-                    { label: "Win Rate", value: "73%", color: "text-mango" },
+                    { label: "Win Rate", value: "84%", color: "text-mango" },
                     { label: "Avg Return", value: "+4.2%", color: "text-green-600" },
                   ].map((stat) => (
                     <div key={stat.label} className="bg-white/60 rounded-xl p-3">

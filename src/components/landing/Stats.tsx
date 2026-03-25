@@ -5,8 +5,7 @@ import { useRef, useEffect, useState } from "react";
 import AnimatedSection from "../ui/AnimatedSection";
 
 const stats = [
-  { value: 2000, suffix: "+", label: "Active Members" },
-  { value: 73, suffix: "%", label: "Avg Win Rate" },
+  { value: 84, suffix: "%", label: "Avg Win Rate" },
   { value: 500, suffix: "+", label: "Trade Alerts / Month" },
   { value: 50, suffix: "+", label: "Live Sessions" },
 ];
@@ -78,7 +77,7 @@ export default function Stats() {
                 Results That Speak.
               </motion.h2>
 
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+              <div className="grid grid-cols-3 gap-8 lg:gap-12">
                 {stats.map((stat, i) => (
                   <AnimatedSection key={stat.label} delay={i * 0.15} className="text-center">
                     <p className="text-4xl sm:text-5xl font-bold text-mango mb-2">
