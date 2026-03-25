@@ -54,7 +54,7 @@ export default function FAQ() {
         <div className="space-y-3">
           {faqs.map((faq, i) => (
             <AnimatedSection key={i} delay={i * 0.08}>
-              <div className="border border-border/50 rounded-xl overflow-hidden bg-surface/30 hover:border-border transition-colors duration-200">
+              <div className="border border-border/50 dark:border-border/40 rounded-xl overflow-hidden bg-surface/30 dark:bg-surface hover:border-border transition-colors duration-200">
                 <button
                   onClick={() => setOpenIndex(openIndex === i ? null : i)}
                   className="w-full flex items-center justify-between p-5 text-left cursor-pointer"

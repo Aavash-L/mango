@@ -347,7 +347,7 @@ export default function DisclosuresPage() {
                   </p>
                 </div>
 
-                <div className="bg-surface/50 border border-border/50 rounded-xl p-5">
+                <div className="bg-surface/50 dark:bg-surface border border-border/50 dark:border-border/40 rounded-xl p-5">
                   <h4 className="text-sm font-semibold mb-1">Contact</h4>
                   <p className="text-sm text-muted">
                     For questions about this Risk Disclosure, contact:
@@ -806,7 +806,7 @@ export default function DisclosuresPage() {
                   </p>
                 </div>
 
-                <div className="bg-surface/50 border border-border/50 rounded-xl p-5">
+                <div className="bg-surface/50 dark:bg-surface border border-border/50 dark:border-border/40 rounded-xl p-5">
                   <h4 className="text-sm font-semibold mb-1">
                     17. Contact Information
                   </h4>

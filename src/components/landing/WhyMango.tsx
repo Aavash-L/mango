@@ -56,7 +56,7 @@ export default function WhyMango() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {reasons.map((reason, i) => (
             <AnimatedSection key={reason.title} delay={i * 0.1}>
-              <div className="group relative h-full bg-surface/50 border border-border/50 rounded-2xl p-6 hover:border-mango/30 transition-all duration-300 hover:bg-surface/80">
+              <div className="group relative h-full bg-surface/50 dark:bg-surface border border-border/50 dark:border-border/40 rounded-2xl p-6 hover:border-mango/30 transition-all duration-300 hover:bg-surface/80 dark:hover:bg-surface-light hover:-translate-y-0.5">
                 {/* Glow on hover */}
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-mango/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 

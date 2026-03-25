@@ -122,7 +122,7 @@ export default function AboutPage() {
             <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {values.map((value, i) => (
                 <AnimatedSection key={value.title} delay={i * 0.1}>
-                  <div className="bg-surface/50 border border-border/50 rounded-2xl p-6 h-full hover:border-mango/20 transition-all duration-300">
+                  <div className="bg-surface/50 dark:bg-surface border border-border/50 dark:border-border/40 rounded-2xl p-6 h-full hover:border-mango/20 transition-all duration-300 hover:-translate-y-0.5">
                     <div className="w-12 h-12 rounded-xl bg-mango/10 border border-mango/20 flex items-center justify-center mb-4">
                       <value.icon size={22} className="text-mango" />
                     </div>

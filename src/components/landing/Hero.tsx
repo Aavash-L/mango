@@ -18,6 +18,10 @@ export default function Hero() {
             backgroundSize: "60px 60px",
           }}
         />
+        {/* Dark mode ambient glow */}
+        <div className="absolute inset-0 opacity-0 dark:opacity-100">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-[60%] bg-[radial-gradient(ellipse_at_center,rgba(232,146,10,0.06),transparent_70%)]" />
+        </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -111,7 +115,7 @@ export default function Hero() {
           >
             <div className="relative">
               {/* Main dashboard card */}
-              <div className="relative bg-surface/80 backdrop-blur-sm rounded-2xl border border-border p-6 shadow-lg shadow-black/5">
+              <div className="relative bg-surface/80 dark:bg-surface backdrop-blur-sm rounded-2xl border border-border p-6 shadow-lg shadow-black/5 dark:shadow-black/30">
                 {/* Top bar */}
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center gap-2">
@@ -175,7 +179,7 @@ export default function Hero() {
                     { label: "Win Rate", value: "84%", color: "text-mango" },
                     { label: "Avg Return", value: "+4.2%", color: "text-green-600 dark:text-green-400" },
                   ].map((stat) => (
-                    <div key={stat.label} className="bg-surface/60 rounded-xl p-3">
+                    <div key={stat.label} className="bg-surface/60 dark:bg-surface-light rounded-xl p-3">
                       <p className="text-[10px] text-muted uppercase tracking-wider mb-1">
                         {stat.label}
                       </p>
@@ -190,7 +194,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.2, duration: 0.6 }}
-                className="absolute -bottom-6 -left-6 bg-surface border border-border rounded-xl p-3 shadow-lg shadow-black/8 flex items-center gap-3"
+                className="absolute -bottom-6 -left-6 bg-surface border border-border rounded-xl p-3 shadow-lg shadow-black/8 dark:shadow-black/30 flex items-center gap-3"
               >
                 <div className="w-10 h-10 rounded-lg bg-green-500/10 flex items-center justify-center">
                   <TrendingUp size={18} className="text-green-600 dark:text-green-400" />

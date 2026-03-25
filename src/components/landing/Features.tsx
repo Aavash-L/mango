@@ -72,7 +72,7 @@ export default function Features() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {features.map((feature, i) => (
             <AnimatedSection key={feature.title} delay={i * 0.08}>
-              <div className="group relative bg-surface/30 border border-border/30 rounded-xl p-5 hover:border-mango/20 hover:bg-surface/60 transition-all duration-300 h-full">
+              <div className="group relative bg-surface/30 dark:bg-surface border border-border/30 dark:border-border/40 rounded-xl p-5 hover:border-mango/20 hover:bg-surface/60 dark:hover:bg-surface-light transition-all duration-300 h-full hover:-translate-y-0.5">
                 <div className="w-10 h-10 rounded-lg bg-mango/10 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
                   <feature.icon size={20} className="text-mango" />
                 </div>

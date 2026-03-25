@@ -56,7 +56,7 @@ export default function ContactPage() {
                       href={social.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group flex items-start gap-4 bg-surface/30 border border-border/30 rounded-xl p-5 hover:border-mango/20 hover:bg-surface/60 transition-all duration-300"
+                      className="group flex items-start gap-4 bg-surface/30 dark:bg-surface border border-border/30 dark:border-border/40 rounded-xl p-5 hover:border-mango/20 hover:bg-surface/60 dark:hover:bg-surface-light transition-all duration-300"
                     >
                       <div className="w-10 h-10 rounded-lg bg-mango/10 flex items-center justify-center shrink-0 group-hover:bg-mango/20 transition-colors duration-300">
                         <social.icon size={20} className="text-mango" />

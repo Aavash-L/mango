@@ -64,7 +64,7 @@ export default function Testimonials() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, i) => (
             <AnimatedSection key={testimonial.name} delay={i * 0.1}>
-              <div className="h-full bg-surface/50 border border-border/50 rounded-2xl p-6 hover:border-mango/20 transition-all duration-300">
+              <div className="h-full bg-surface/50 dark:bg-surface border border-border/50 dark:border-border/40 rounded-2xl p-6 hover:border-mango/20 transition-all duration-300 hover:-translate-y-0.5">
                 <div className="flex gap-1 mb-4">
                   {Array.from({ length: testimonial.rating }).map((_, j) => (
                     <Star

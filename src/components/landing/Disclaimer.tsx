@@ -34,7 +34,7 @@ export default function Disclaimer() {
             {disclaimers.map((item) => (
               <div
                 key={item.title}
-                className="flex flex-col items-center text-center p-5 rounded-xl bg-surface/30 border border-border/30"
+                className="flex flex-col items-center text-center p-5 rounded-xl bg-surface/30 dark:bg-surface border border-border/30 dark:border-border/40"
               >
                 <div className="w-10 h-10 rounded-lg bg-mango/10 flex items-center justify-center mb-3">
                   <item.icon size={20} className="text-mango/80" />
