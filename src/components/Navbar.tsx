@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import MangoLogo from "./ui/MangoLogo";
 import Button from "./ui/Button";
+import ThemeToggle from "./ui/ThemeToggle";
 import Link from "next/link";
 
 const navLinks = [
@@ -58,7 +59,8 @@ export default function Navbar() {
             ))}
           </div>
 
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center gap-3">
+            <ThemeToggle />
             <Button href="#" size="sm">
               Join for Free
             </Button>
@@ -96,8 +98,9 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <div className="pt-4">
-                <Button href="#" size="lg" className="w-full">
+              <div className="flex items-center gap-3 pt-4">
+                <ThemeToggle />
+                <Button href="#" size="lg" className="flex-1">
                   Join for Free
                 </Button>
               </div>

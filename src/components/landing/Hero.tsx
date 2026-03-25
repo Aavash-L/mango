@@ -14,7 +14,7 @@ export default function Hero() {
           className="absolute inset-0 opacity-[0.4]"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px)",
+              "linear-gradient(var(--color-grid-line) 1px, transparent 1px), linear-gradient(90deg, var(--color-grid-line) 1px, transparent 1px)",
             backgroundSize: "60px 60px",
           }}
         />
@@ -171,11 +171,11 @@ export default function Hero() {
                 {/* Stats row */}
                 <div className="grid grid-cols-3 gap-4">
                   {[
-                    { label: "Portfolio", value: "+24.8%", color: "text-green-600" },
+                    { label: "Portfolio", value: "+24.8%", color: "text-green-600 dark:text-green-400" },
                     { label: "Win Rate", value: "84%", color: "text-mango" },
-                    { label: "Avg Return", value: "+4.2%", color: "text-green-600" },
+                    { label: "Avg Return", value: "+4.2%", color: "text-green-600 dark:text-green-400" },
                   ].map((stat) => (
-                    <div key={stat.label} className="bg-white/60 rounded-xl p-3">
+                    <div key={stat.label} className="bg-surface/60 rounded-xl p-3">
                       <p className="text-[10px] text-muted uppercase tracking-wider mb-1">
                         {stat.label}
                       </p>
@@ -193,7 +193,7 @@ export default function Hero() {
                 className="absolute -bottom-6 -left-6 bg-surface border border-border rounded-xl p-3 shadow-lg shadow-black/8 flex items-center gap-3"
               >
                 <div className="w-10 h-10 rounded-lg bg-green-500/10 flex items-center justify-center">
-                  <TrendingUp size={18} className="text-green-600" />
+                  <TrendingUp size={18} className="text-green-600 dark:text-green-400" />
                 </div>
                 <div>
                   <p className="text-xs font-medium">New Signal</p>

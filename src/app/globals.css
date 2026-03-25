@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme inline {
   --color-background: #FEFCF9;
   --color-foreground: #1C1917;
@@ -14,9 +16,28 @@
   --font-mono: var(--font-geist-mono);
 }
 
+:root {
+  --color-grid-line: rgba(0, 0, 0, 0.06);
+}
+
+.dark {
+  --color-background: #141210;
+  --color-foreground: #F5F0EB;
+  --color-mango: #E8920A;
+  --color-mango-light: #F5A623;
+  --color-mango-dark: #C47A08;
+  --color-surface: #1E1B18;
+  --color-surface-light: #292523;
+  --color-border: #3D3733;
+  --color-muted: #A8A29E;
+  --color-grid-line: rgba(255, 255, 255, 0.06);
+  --shadow-color: rgba(0, 0, 0, 0.25);
+  --shadow-color-sm: rgba(0, 0, 0, 0.15);
+}
+
 * {
   scrollbar-width: thin;
-  scrollbar-color: #D6CFC7 transparent;
+  scrollbar-color: var(--color-border) transparent;
 }
 
 html {
@@ -31,7 +52,7 @@ body {
 
 ::selection {
   background: rgba(232, 146, 10, 0.2);
-  color: #1C1917;
+  color: var(--color-foreground);
 }
 
 @keyframes shimmer {
@@ -49,7 +70,8 @@ body {
 }
 
 .glow-box {
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 24px var(--shadow-color, rgba(0, 0, 0, 0.06)),
+              0 1px 4px var(--shadow-color-sm, rgba(0, 0, 0, 0.04));
 }
 
 .glow-border {
