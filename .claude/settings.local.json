@@ -5,7 +5,16 @@
       "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack)",
       "Bash(printf 'N\\\\nN\\\\n')",
       "Bash(printf 'N\\\\nN\\\\nN\\\\nN\\\\n')",
-      "Bash(yes \"N\")"
+      "Bash(yes \"N\")",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(npx next:*)",
+      "Bash(curl -s http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__027_vz~._.css)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(taskkill //F //IM node.exe)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(git:*)",
+      "Bash(grep -r \"next-themes\\\\|ThemeProvider\\\\|useTheme\\\\|dark:\" /c/Users/pgami/OneDrive/Desktop/mango/src --include=*.tsx --include=*.ts)"
     ]
   }
 }

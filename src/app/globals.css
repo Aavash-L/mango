@@ -2,42 +2,82 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* ================================================
+   Design tokens — light mode (default)
+   ================================================ */
+:root {
+  --app-bg: #FEFCF9;
+  --app-fg: #1C1917;
+  --app-mango: #E8920A;
+  --app-mango-light: #F5A623;
+  --app-mango-dark: #C47A08;
+  --app-surface: #F5F0EB;
+  --app-surface-light: #EDE7E0;
+  --app-border: #D6CFC7;
+  --app-muted: #78716C;
+  --app-grid-line: rgba(0, 0, 0, 0.06);
+  --app-shadow: rgba(0, 0, 0, 0.06);
+  --app-shadow-sm: rgba(0, 0, 0, 0.04);
+  --color-grid-line: var(--app-grid-line);
+}
+
+/* ================================================
+   Design tokens — dark mode
+   ================================================ */
+.dark {
+  --app-bg: #0F0D0B;
+  --app-fg: #F5F0EB;
+  --app-mango: #F0A020;
+  --app-mango-light: #F5B640;
+  --app-mango-dark: #D48A10;
+  --app-surface: #1A1614;
+  --app-surface-light: #242018;
+  --app-border: #3A3228;
+  --app-muted: #A89B8E;
+  --app-grid-line: rgba(255, 255, 255, 0.04);
+  --app-shadow: rgba(0, 0, 0, 0.5);
+  --app-shadow-sm: rgba(0, 0, 0, 0.3);
+  --color-grid-line: var(--app-grid-line);
+}
+
+/* ================================================
+   Map tokens → Tailwind theme (via var references)
+   ================================================ */
 @theme inline {
-  --color-background: #FEFCF9;
-  --color-foreground: #1C1917;
-  --color-mango: #E8920A;
-  --color-mango-light: #F5A623;
-  --color-mango-dark: #C47A08;
-  --color-surface: #F5F0EB;
-  --color-surface-light: #EDE7E0;
-  --color-border: #D6CFC7;
-  --color-muted: #78716C;
+  --color-background: var(--app-bg);
+  --color-foreground: var(--app-fg);
+  --color-mango: var(--app-mango);
+  --color-mango-light: var(--app-mango-light);
+  --color-mango-dark: var(--app-mango-dark);
+  --color-surface: var(--app-surface);
+  --color-surface-light: var(--app-surface-light);
+  --color-border: var(--app-border);
+  --color-muted: var(--app-muted);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-:root {
-  --color-grid-line: rgba(0, 0, 0, 0.06);
+/* ================================================
+   Smooth theme transition (toggled via JS class)
+   ================================================ */
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *::before,
+html.theme-transition *::after {
+  transition: background-color 600ms ease,
+              border-color 600ms ease,
+              color 600ms ease,
+              fill 600ms ease,
+              stroke 600ms ease,
+              box-shadow 600ms ease !important;
 }
 
-.dark {
-  --color-background: #0B0908;
-  --color-foreground: #F8F5F0;
-  --color-mango: #E8920A;
-  --color-mango-light: #F5A623;
-  --color-mango-dark: #C47A08;
-  --color-surface: #1C1814;
-  --color-surface-light: #282320;
-  --color-border: #362F28;
-  --color-muted: #9A8E82;
-  --color-grid-line: rgba(255, 255, 255, 0.04);
-  --shadow-color: rgba(0, 0, 0, 0.5);
-  --shadow-color-sm: rgba(0, 0, 0, 0.3);
-}
-
+/* ================================================
+   Base styles
+   ================================================ */
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--color-border) transparent;
+  scrollbar-color: var(--app-border) transparent;
 }
 
 html {
@@ -45,14 +85,14 @@ html {
 }
 
 body {
-  background: var(--color-background);
-  color: var(--color-foreground);
+  background: var(--app-bg);
+  color: var(--app-fg);
   font-family: var(--font-sans), system-ui, sans-serif;
 }
 
 ::selection {
   background: rgba(232, 146, 10, 0.2);
-  color: var(--color-foreground);
+  color: var(--app-fg);
 }
 
 @keyframes shimmer {
@@ -66,14 +106,14 @@ body {
 }
 
 .gradient-text {
-  color: var(--color-mango);
+  color: var(--app-mango);
 }
 
 .glow-box {
-  box-shadow: 0 4px 24px var(--shadow-color, rgba(0, 0, 0, 0.06)),
-              0 1px 4px var(--shadow-color-sm, rgba(0, 0, 0, 0.04));
+  box-shadow: 0 4px 24px var(--app-shadow),
+              0 1px 4px var(--app-shadow-sm);
 }
 
 .glow-border {
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--app-border);
 }
