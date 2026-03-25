@@ -160,7 +160,7 @@ export default function AboutPage() {
                     members build lasting success in the markets and beyond. This
                     is just the beginning.
                   </p>
-                  <Button href="#" size="lg">
+                  <Button href="https://discord.gg/XuxvCnxZpH" size="lg">
                     Join for Free <ArrowRight size={18} className="ml-2" />
                   </Button>
                 </div>

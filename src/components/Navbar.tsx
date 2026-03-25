@@ -61,7 +61,7 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center gap-3">
             <ThemeToggle />
-            <Button href="#" size="sm">
+            <Button href="https://discord.gg/XuxvCnxZpH" size="sm">
               Join for Free
             </Button>
           </div>
@@ -100,7 +100,7 @@ export default function Navbar() {
               ))}
               <div className="flex items-center gap-3 pt-4">
                 <ThemeToggle />
-                <Button href="#" size="lg" className="flex-1">
+                <Button href="https://discord.gg/XuxvCnxZpH" size="lg" className="flex-1">
                   Join for Free
                 </Button>
               </div>

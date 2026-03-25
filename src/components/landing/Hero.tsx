@@ -67,7 +67,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Button href="#" size="lg">
+              <Button href="https://discord.gg/XuxvCnxZpH" size="lg">
                 Join for Free <ArrowRight size={18} className="ml-2" />
               </Button>
               <Button href="#why-mango" variant="secondary" size="lg">
